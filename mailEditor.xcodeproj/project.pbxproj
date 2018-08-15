@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5F060D96C554F9A2C2A90F /* libPods-mailEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C7270C9AFDE35C1D5C1D2B /* libPods-mailEditor.a */; };
+		6EC2D3C0CDD4463D2C232CDE /* libPods-mailEditorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561FBD7705C099EA77FF3837 /* libPods-mailEditorUITests.a */; };
+		A1D347FAD19A1E4359A10FB6 /* libPods-mailEditorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9B2045C5F48236BA1EC71 /* libPods-mailEditorTests.a */; };
+		F102138B21116C0D007441C5 /* selectStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F102138A21116C0D007441C5 /* selectStyleView.m */; };
+		F102138E2111ADEE007441C5 /* styleBtnItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F102138D2111ADEE007441C5 /* styleBtnItem.m */; };
+		F10213E02112BCAB007441C5 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = F10213902112BCAB007441C5 /* editor.html */; };
+		F102142D2112BCAB007441C5 /* jQuery.js in Resources */ = {isa = PBXBuildFile; fileRef = F10213DE2112BCAB007441C5 /* jQuery.js */; };
+		F102142E2112BCAB007441C5 /* JSBeautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = F10213DF2112BCAB007441C5 /* JSBeautifier.js */; };
+		F10214302112BE43007441C5 /* MailRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = F102142F2112BE43007441C5 /* MailRichTextEditor.js */; };
+		F15B305C210AB400007701A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B305B210AB400007701A8 /* AppDelegate.m */; };
+		F15B305F210AB400007701A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B305E210AB400007701A8 /* ViewController.m */; };
+		F15B3062210AB400007701A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B3060210AB400007701A8 /* Main.storyboard */; };
+		F15B3064210AB401007701A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15B3063210AB401007701A8 /* Assets.xcassets */; };
+		F15B3067210AB401007701A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15B3065210AB401007701A8 /* LaunchScreen.storyboard */; };
+		F15B306A210AB401007701A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B3069210AB401007701A8 /* main.m */; };
+		F15B3074210AB401007701A8 /* mailEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B3073210AB401007701A8 /* mailEditorTests.m */; };
+		F15B307F210AB401007701A8 /* mailEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B307E210AB401007701A8 /* mailEditorUITests.m */; };
+		F15B308F210AB4D9007701A8 /* editorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B308E210AB4D9007701A8 /* editorViewController.m */; };
+		F16CF7C521105B7100FAC71E /* MailRichTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF7C421105B7100FAC71E /* MailRichTextEditor.m */; };
+		F16CF89E211061CF00FAC71E /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF88A211061CF00FAC71E /* CYRLayoutManager.m */; };
+		F16CF89F211061CF00FAC71E /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF88C211061CF00FAC71E /* CYRTextStorage.m */; };
+		F16CF8A0211061CF00FAC71E /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF88E211061CF00FAC71E /* CYRTextView.m */; };
+		F16CF8A1211061CF00FAC71E /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF890211061CF00FAC71E /* CYRToken.m */; };
+		F16CF8A2211061CF00FAC71E /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF892211061CF00FAC71E /* HRBrightnessCursor.m */; };
+		F16CF8A3211061CF00FAC71E /* HRCgUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF894211061CF00FAC71E /* HRCgUtil.m */; };
+		F16CF8A4211061CF00FAC71E /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF896211061CF00FAC71E /* HRColorCursor.m */; };
+		F16CF8A5211061CF00FAC71E /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF899211061CF00FAC71E /* HRColorPickerView.m */; };
+		F16CF8A6211061CF00FAC71E /* HRColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF89B211061CF00FAC71E /* HRColorPickerViewController.m */; };
+		F16CF8A7211061CF00FAC71E /* HRColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF89D211061CF00FAC71E /* HRColorUtil.m */; };
+		F16CF8AA211061FE00FAC71E /* mailTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16CF8A9211061FE00FAC71E /* mailTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F15B3070210AB401007701A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15B304F210AB400007701A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15B3056210AB400007701A8;
+			remoteInfo = mailEditor;
+		};
+		F15B307B210AB401007701A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F15B304F210AB400007701A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15B3056210AB400007701A8;
+			remoteInfo = mailEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004083DF75899C9444B09E61 /* Pods-mailEditorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditorTests/Pods-mailEditorTests.release.xcconfig"; sourceTree = "<group>"; };
+		5063E50FE267A56F02F65966 /* Pods-mailEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditor/Pods-mailEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		561FBD7705C099EA77FF3837 /* libPods-mailEditorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mailEditorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC775117A0853F85FEF5852 /* Pods-mailEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditorTests/Pods-mailEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFFFEC5C20164A69C01E1391 /* Pods-mailEditorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditorUITests/Pods-mailEditorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1597D404F350A49D1D71ADC /* Pods-mailEditorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditorUITests/Pods-mailEditorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F102138921116C0D007441C5 /* selectStyleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectStyleView.h; sourceTree = "<group>"; };
+		F102138A21116C0D007441C5 /* selectStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selectStyleView.m; sourceTree = "<group>"; };
+		F102138C2111ADEE007441C5 /* styleBtnItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = styleBtnItem.h; sourceTree = "<group>"; };
+		F102138D2111ADEE007441C5 /* styleBtnItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = styleBtnItem.m; sourceTree = "<group>"; };
+		F10213902112BCAB007441C5 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
+		F10213DE2112BCAB007441C5 /* jQuery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jQuery.js; sourceTree = "<group>"; };
+		F10213DF2112BCAB007441C5 /* JSBeautifier.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSBeautifier.js; sourceTree = "<group>"; };
+		F102142F2112BE43007441C5 /* MailRichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = MailRichTextEditor.js; path = editor/Source/MailRichTextEditor.js; sourceTree = SOURCE_ROOT; };
+		F15B3057210AB400007701A8 /* mailEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mailEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B305A210AB400007701A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F15B305B210AB400007701A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F15B305D210AB400007701A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F15B305E210AB400007701A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F15B3061210AB400007701A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F15B3063210AB401007701A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F15B3066210AB401007701A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F15B3068210AB401007701A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B3069210AB401007701A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F15B306F210AB401007701A8 /* mailEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mailEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B3073210AB401007701A8 /* mailEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mailEditorTests.m; sourceTree = "<group>"; };
+		F15B3075210AB401007701A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B307A210AB401007701A8 /* mailEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mailEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B307E210AB401007701A8 /* mailEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mailEditorUITests.m; sourceTree = "<group>"; };
+		F15B3080210AB401007701A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15B308D210AB4D9007701A8 /* editorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editorViewController.h; sourceTree = "<group>"; };
+		F15B308E210AB4D9007701A8 /* editorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editorViewController.m; sourceTree = "<group>"; };
+		F16CF7C321105B7100FAC71E /* MailRichTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailRichTextEditor.h; sourceTree = "<group>"; };
+		F16CF7C421105B7100FAC71E /* MailRichTextEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailRichTextEditor.m; sourceTree = "<group>"; };
+		F16CF889211061CF00FAC71E /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRLayoutManager.h; sourceTree = "<group>"; };
+		F16CF88A211061CF00FAC71E /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRLayoutManager.m; sourceTree = "<group>"; };
+		F16CF88B211061CF00FAC71E /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextStorage.h; sourceTree = "<group>"; };
+		F16CF88C211061CF00FAC71E /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextStorage.m; sourceTree = "<group>"; };
+		F16CF88D211061CF00FAC71E /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextView.h; sourceTree = "<group>"; };
+		F16CF88E211061CF00FAC71E /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextView.m; sourceTree = "<group>"; };
+		F16CF88F211061CF00FAC71E /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRToken.h; sourceTree = "<group>"; };
+		F16CF890211061CF00FAC71E /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRToken.m; sourceTree = "<group>"; };
+		F16CF891211061CF00FAC71E /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBrightnessCursor.h; sourceTree = "<group>"; };
+		F16CF892211061CF00FAC71E /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBrightnessCursor.m; sourceTree = "<group>"; };
+		F16CF893211061CF00FAC71E /* HRCgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCgUtil.h; sourceTree = "<group>"; };
+		F16CF894211061CF00FAC71E /* HRCgUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCgUtil.m; sourceTree = "<group>"; };
+		F16CF895211061CF00FAC71E /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorCursor.h; sourceTree = "<group>"; };
+		F16CF896211061CF00FAC71E /* HRColorCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorCursor.m; sourceTree = "<group>"; };
+		F16CF897211061CF00FAC71E /* HRColorPickerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerMacros.h; sourceTree = "<group>"; };
+		F16CF898211061CF00FAC71E /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerView.h; sourceTree = "<group>"; };
+		F16CF899211061CF00FAC71E /* HRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorPickerView.m; sourceTree = "<group>"; };
+		F16CF89A211061CF00FAC71E /* HRColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerViewController.h; sourceTree = "<group>"; };
+		F16CF89B211061CF00FAC71E /* HRColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorPickerViewController.m; sourceTree = "<group>"; };
+		F16CF89C211061CF00FAC71E /* HRColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorUtil.h; sourceTree = "<group>"; };
+		F16CF89D211061CF00FAC71E /* HRColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRColorUtil.m; sourceTree = "<group>"; };
+		F16CF8A8211061FE00FAC71E /* mailTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mailTextView.h; sourceTree = "<group>"; };
+		F16CF8A9211061FE00FAC71E /* mailTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mailTextView.m; sourceTree = "<group>"; };
+		F2B9B2045C5F48236BA1EC71 /* libPods-mailEditorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mailEditorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54A6E763E08101254A0449B /* Pods-mailEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mailEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-mailEditor/Pods-mailEditor.release.xcconfig"; sourceTree = "<group>"; };
+		F5C7270C9AFDE35C1D5C1D2B /* libPods-mailEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mailEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15B3054210AB400007701A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5F060D96C554F9A2C2A90F /* libPods-mailEditor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B306C210AB401007701A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D347FAD19A1E4359A10FB6 /* libPods-mailEditorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B3077210AB401007701A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC2D3C0CDD4463D2C232CDE /* libPods-mailEditorUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DF9D1E896BA4EBCF2DE6C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7270C9AFDE35C1D5C1D2B /* libPods-mailEditor.a */,
+				F2B9B2045C5F48236BA1EC71 /* libPods-mailEditorTests.a */,
+				561FBD7705C099EA77FF3837 /* libPods-mailEditorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78ADC39783994A183FCC788B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5063E50FE267A56F02F65966 /* Pods-mailEditor.debug.xcconfig */,
+				F54A6E763E08101254A0449B /* Pods-mailEditor.release.xcconfig */,
+				CFC775117A0853F85FEF5852 /* Pods-mailEditorTests.debug.xcconfig */,
+				004083DF75899C9444B09E61 /* Pods-mailEditorTests.release.xcconfig */,
+				D1597D404F350A49D1D71ADC /* Pods-mailEditorUITests.debug.xcconfig */,
+				CFFFEC5C20164A69C01E1391 /* Pods-mailEditorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F102138F2112BCAB007441C5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F10213902112BCAB007441C5 /* editor.html */,
+				F102142F2112BE43007441C5 /* MailRichTextEditor.js */,
+				F10213DE2112BCAB007441C5 /* jQuery.js */,
+				F10213DF2112BCAB007441C5 /* JSBeautifier.js */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F15B304E210AB400007701A8 = {
+			isa = PBXGroup;
+			children = (
+				F15B308C210AB4B4007701A8 /* editor */,
+				F15B3059210AB400007701A8 /* mailEditor */,
+				F15B3072210AB401007701A8 /* mailEditorTests */,
+				F15B307D210AB401007701A8 /* mailEditorUITests */,
+				F15B3058210AB400007701A8 /* Products */,
+				78ADC39783994A183FCC788B /* Pods */,
+				2DF9D1E896BA4EBCF2DE6C27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F15B3058210AB400007701A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15B3057210AB400007701A8 /* mailEditor.app */,
+				F15B306F210AB401007701A8 /* mailEditorTests.xctest */,
+				F15B307A210AB401007701A8 /* mailEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15B3059210AB400007701A8 /* mailEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F15B305A210AB400007701A8 /* AppDelegate.h */,
+				F15B305B210AB400007701A8 /* AppDelegate.m */,
+				F15B305D210AB400007701A8 /* ViewController.h */,
+				F15B305E210AB400007701A8 /* ViewController.m */,
+				F15B308D210AB4D9007701A8 /* editorViewController.h */,
+				F15B308E210AB4D9007701A8 /* editorViewController.m */,
+				F15B3060210AB400007701A8 /* Main.storyboard */,
+				F15B3063210AB401007701A8 /* Assets.xcassets */,
+				F15B3065210AB401007701A8 /* LaunchScreen.storyboard */,
+				F15B3068210AB401007701A8 /* Info.plist */,
+				F15B3069210AB401007701A8 /* main.m */,
+			);
+			path = mailEditor;
+			sourceTree = "<group>";
+		};
+		F15B3072210AB401007701A8 /* mailEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F15B3073210AB401007701A8 /* mailEditorTests.m */,
+				F15B3075210AB401007701A8 /* Info.plist */,
+			);
+			path = mailEditorTests;
+			sourceTree = "<group>";
+		};
+		F15B307D210AB401007701A8 /* mailEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F15B307E210AB401007701A8 /* mailEditorUITests.m */,
+				F15B3080210AB401007701A8 /* Info.plist */,
+			);
+			path = mailEditorUITests;
+			sourceTree = "<group>";
+		};
+		F15B308C210AB4B4007701A8 /* editor */ = {
+			isa = PBXGroup;
+			children = (
+				F102138F2112BCAB007441C5 /* Source */,
+				F16CF888211061CF00FAC71E /* Third Party */,
+				F16CF7C321105B7100FAC71E /* MailRichTextEditor.h */,
+				F16CF7C421105B7100FAC71E /* MailRichTextEditor.m */,
+				F16CF8A8211061FE00FAC71E /* mailTextView.h */,
+				F16CF8A9211061FE00FAC71E /* mailTextView.m */,
+				F102138921116C0D007441C5 /* selectStyleView.h */,
+				F102138A21116C0D007441C5 /* selectStyleView.m */,
+				F102138C2111ADEE007441C5 /* styleBtnItem.h */,
+				F102138D2111ADEE007441C5 /* styleBtnItem.m */,
+			);
+			path = editor;
+			sourceTree = "<group>";
+		};
+		F16CF888211061CF00FAC71E /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				F16CF889211061CF00FAC71E /* CYRLayoutManager.h */,
+				F16CF88A211061CF00FAC71E /* CYRLayoutManager.m */,
+				F16CF88B211061CF00FAC71E /* CYRTextStorage.h */,
+				F16CF88C211061CF00FAC71E /* CYRTextStorage.m */,
+				F16CF88D211061CF00FAC71E /* CYRTextView.h */,
+				F16CF88E211061CF00FAC71E /* CYRTextView.m */,
+				F16CF88F211061CF00FAC71E /* CYRToken.h */,
+				F16CF890211061CF00FAC71E /* CYRToken.m */,
+				F16CF891211061CF00FAC71E /* HRBrightnessCursor.h */,
+				F16CF892211061CF00FAC71E /* HRBrightnessCursor.m */,
+				F16CF893211061CF00FAC71E /* HRCgUtil.h */,
+				F16CF894211061CF00FAC71E /* HRCgUtil.m */,
+				F16CF895211061CF00FAC71E /* HRColorCursor.h */,
+				F16CF896211061CF00FAC71E /* HRColorCursor.m */,
+				F16CF897211061CF00FAC71E /* HRColorPickerMacros.h */,
+				F16CF898211061CF00FAC71E /* HRColorPickerView.h */,
+				F16CF899211061CF00FAC71E /* HRColorPickerView.m */,
+				F16CF89A211061CF00FAC71E /* HRColorPickerViewController.h */,
+				F16CF89B211061CF00FAC71E /* HRColorPickerViewController.m */,
+				F16CF89C211061CF00FAC71E /* HRColorUtil.h */,
+				F16CF89D211061CF00FAC71E /* HRColorUtil.m */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F15B3056210AB400007701A8 /* mailEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B3083210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditor" */;
+			buildPhases = (
+				21707EAB3D1D8164758AAEF9 /* [CP] Check Pods Manifest.lock */,
+				F15B3053210AB400007701A8 /* Sources */,
+				F15B3054210AB400007701A8 /* Frameworks */,
+				F15B3055210AB400007701A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mailEditor;
+			productName = mailEditor;
+			productReference = F15B3057210AB400007701A8 /* mailEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F15B306E210AB401007701A8 /* mailEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B3086210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditorTests" */;
+			buildPhases = (
+				047673BD91EE537AAC8B868A /* [CP] Check Pods Manifest.lock */,
+				F15B306B210AB401007701A8 /* Sources */,
+				F15B306C210AB401007701A8 /* Frameworks */,
+				F15B306D210AB401007701A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15B3071210AB401007701A8 /* PBXTargetDependency */,
+			);
+			name = mailEditorTests;
+			productName = mailEditorTests;
+			productReference = F15B306F210AB401007701A8 /* mailEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F15B3079210AB401007701A8 /* mailEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F15B3089210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditorUITests" */;
+			buildPhases = (
+				2B6A4BD4087A18064A56EEAB /* [CP] Check Pods Manifest.lock */,
+				F15B3076210AB401007701A8 /* Sources */,
+				F15B3077210AB401007701A8 /* Frameworks */,
+				F15B3078210AB401007701A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F15B307C210AB401007701A8 /* PBXTargetDependency */,
+			);
+			name = mailEditorUITests;
+			productName = mailEditorUITests;
+			productReference = F15B307A210AB401007701A8 /* mailEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F15B304F210AB400007701A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "赵祥";
+				TargetAttributes = {
+					F15B3056210AB400007701A8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F15B306E210AB401007701A8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F15B3056210AB400007701A8;
+					};
+					F15B3079210AB401007701A8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F15B3056210AB400007701A8;
+					};
+				};
+			};
+			buildConfigurationList = F15B3052210AB400007701A8 /* Build configuration list for PBXProject "mailEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F15B304E210AB400007701A8;
+			productRefGroup = F15B3058210AB400007701A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15B3056210AB400007701A8 /* mailEditor */,
+				F15B306E210AB401007701A8 /* mailEditorTests */,
+				F15B3079210AB401007701A8 /* mailEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F15B3055210AB400007701A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B3067210AB401007701A8 /* LaunchScreen.storyboard in Resources */,
+				F102142E2112BCAB007441C5 /* JSBeautifier.js in Resources */,
+				F10213E02112BCAB007441C5 /* editor.html in Resources */,
+				F10214302112BE43007441C5 /* MailRichTextEditor.js in Resources */,
+				F102142D2112BCAB007441C5 /* jQuery.js in Resources */,
+				F15B3064210AB401007701A8 /* Assets.xcassets in Resources */,
+				F15B3062210AB400007701A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B306D210AB401007701A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B3078210AB401007701A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047673BD91EE537AAC8B868A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mailEditorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21707EAB3D1D8164758AAEF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mailEditor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B6A4BD4087A18064A56EEAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mailEditorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15B3053210AB400007701A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16CF8A2211061CF00FAC71E /* HRBrightnessCursor.m in Sources */,
+				F16CF8A5211061CF00FAC71E /* HRColorPickerView.m in Sources */,
+				F16CF89E211061CF00FAC71E /* CYRLayoutManager.m in Sources */,
+				F102138B21116C0D007441C5 /* selectStyleView.m in Sources */,
+				F16CF89F211061CF00FAC71E /* CYRTextStorage.m in Sources */,
+				F102138E2111ADEE007441C5 /* styleBtnItem.m in Sources */,
+				F16CF8A3211061CF00FAC71E /* HRCgUtil.m in Sources */,
+				F15B305F210AB400007701A8 /* ViewController.m in Sources */,
+				F16CF8A4211061CF00FAC71E /* HRColorCursor.m in Sources */,
+				F15B306A210AB401007701A8 /* main.m in Sources */,
+				F16CF8A7211061CF00FAC71E /* HRColorUtil.m in Sources */,
+				F15B305C210AB400007701A8 /* AppDelegate.m in Sources */,
+				F15B308F210AB4D9007701A8 /* editorViewController.m in Sources */,
+				F16CF8A6211061CF00FAC71E /* HRColorPickerViewController.m in Sources */,
+				F16CF8AA211061FE00FAC71E /* mailTextView.m in Sources */,
+				F16CF8A1211061CF00FAC71E /* CYRToken.m in Sources */,
+				F16CF8A0211061CF00FAC71E /* CYRTextView.m in Sources */,
+				F16CF7C521105B7100FAC71E /* MailRichTextEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B306B210AB401007701A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B3074210AB401007701A8 /* mailEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15B3076210AB401007701A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15B307F210AB401007701A8 /* mailEditorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F15B3071210AB401007701A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15B3056210AB400007701A8 /* mailEditor */;
+			targetProxy = F15B3070210AB401007701A8 /* PBXContainerItemProxy */;
+		};
+		F15B307C210AB401007701A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F15B3056210AB400007701A8 /* mailEditor */;
+			targetProxy = F15B307B210AB401007701A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F15B3060210AB400007701A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15B3061210AB400007701A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F15B3065210AB401007701A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15B3066210AB401007701A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F15B3081210AB401007701A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F15B3082210AB401007701A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F15B3084210AB401007701A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5063E50FE267A56F02F65966 /* Pods-mailEditor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H7K3S46CE;
+				INFOPLIST_FILE = mailEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F15B3085210AB401007701A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54A6E763E08101254A0449B /* Pods-mailEditor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H7K3S46CE;
+				INFOPLIST_FILE = mailEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F15B3087210AB401007701A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC775117A0853F85FEF5852 /* Pods-mailEditorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mailEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mailEditor.app/mailEditor";
+			};
+			name = Debug;
+		};
+		F15B3088210AB401007701A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004083DF75899C9444B09E61 /* Pods-mailEditorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mailEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mailEditor.app/mailEditor";
+			};
+			name = Release;
+		};
+		F15B308A210AB401007701A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1597D404F350A49D1D71ADC /* Pods-mailEditorUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mailEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mailEditor;
+			};
+			name = Debug;
+		};
+		F15B308B210AB401007701A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFFEC5C20164A69C01E1391 /* Pods-mailEditorUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mailEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mailEditor.mailEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mailEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F15B3052210AB400007701A8 /* Build configuration list for PBXProject "mailEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B3081210AB401007701A8 /* Debug */,
+				F15B3082210AB401007701A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B3083210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B3084210AB401007701A8 /* Debug */,
+				F15B3085210AB401007701A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B3086210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B3087210AB401007701A8 /* Debug */,
+				F15B3088210AB401007701A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15B3089210AB401007701A8 /* Build configuration list for PBXNativeTarget "mailEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F15B308A210AB401007701A8 /* Debug */,
+				F15B308B210AB401007701A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F15B304F210AB400007701A8 /* Project object */;
+}
